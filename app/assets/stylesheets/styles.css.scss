@@ -1,5 +1,18 @@
 @import 'bootstrap';
 
+.banner {
+  color: white;
+  font-size: 35px;
+  font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
+  margin-left: 20px;
+}
+
+.banner-container {
+  width: 1170px;
+  margin: auto;
+  padding-top: 10px;
+}
+
 .blogboxshow {
   text-align: center;
 }
@@ -30,7 +43,7 @@
 }
 .blogcontrols {
   float:right;
-  margin-top: 20px;
+  margin: 20px 20px 0 0;
 }
 
 .blogshowimages img {
@@ -51,13 +64,15 @@
 }
 
 .blog_posts {
-  width: 730px;
+  width: 700px;
   height: auto;
   padding-left: 9px;
   padding-right: 8px;
   padding-bottom: 8px;
   padding-top: 2px;
   box-shadow: 1px 1px 10px #444;
+  overflow: hidden;
+  background-color: #fff;
 }
 
 .blog_posts a:visited {
@@ -70,4 +85,92 @@
 
 .blog_video a {
   text-align: center;
+}
+
+body {
+  background-color: #222;
+}
+
+.container {
+  padding-top: 0px;
+  overflow: hidden;
+}
+
+.header {
+  height: 75px;
+  background-image: linear-gradient(#e31b23, #b32024);
+}
+
+hr.post {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.left-column-list {
+  list-style-type: none;
+}
+
+.left-column-list li {
+  margin-left: -20px;
+  margin-top: 5px;
+}
+
+.left-column-list li a {
+  text-decoration: none;
+}
+
+.left-column-list li a:hover {
+  background-color: #222;
+}
+
+.navbar {
+  background-color: red;
+  border: none;
+}
+
+.recent_posts {
+  box-shadow: 1px 1px 1px #444;
+}
+ 
+@media (max-width: 1198px) {
+  #right-column {
+    float: left;
+  }
+}
+#inner {
+  width: 65%;
+  height: 100%;
+  border: black;
+  background-color: #222;
+  float: left;
+  overflow: hidden;
+}
+
+#left-column #right-column {
+
+}
+
+#right-column {
+  float: right;
+  height: 1200px;
+  width: 285px;
+  padding-top: 20px;
+
+}
+
+#left-column {
+  background-color: #222;
+  float: left;
+  width: 114px;
+  height: 1200px;
+  margin-left: 0;
+}
+
+#left-column a {
+  color: white;
 }
