@@ -7,6 +7,15 @@
   margin-left: 20px;
 }
 
+.banner a:hover {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.banner a:visited {
+  color: white;
+}
+
 .banner-container {
   width: 1170px;
   margin: auto;
@@ -57,7 +66,6 @@
 
 .blog_container {
   margin-bottom: 60px;
-
 }
 
 .blog_search {
@@ -66,7 +74,7 @@
 }
 
 .blog_posts {
-  width: 570px;
+  width: 670px;
   height: auto;
   padding-left: 9px;
   padding-right: 8px;
@@ -115,21 +123,26 @@ hr.post {
   background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
 }
 
-.left-column-list {
+.header-list {
   list-style-type: none;
 }
 
-.left-column-list li {
-  margin-left: -20px;
-  margin-top: 5px;
-}
-
-.left-column-list li a {
+.header-list li a {
   text-decoration: none;
+  color: white;
+  display: inline;
+  float: left;
+  padding: 0px;
+  margin: -17px 10px 0 10px;
 }
 
-.left-column-list li a:hover {
-  background-color: #222;
+.header-list li a:hover {
+  background-color: transparent;
+}
+
+.home-container {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -141,28 +154,35 @@ hr.post {
   box-shadow: 1px 1px 1px #444;
 }
  
+.right-list {
+  padding: 0px;
+} 
+
+.right-list li {
+  display: inline;
+  color: white;
+  margin: 0 10px 0 10px;
+}
+
+.right-list a:hover {
+  background-color: transparent;
+}
+
+.right-nav {
+  float: right;
+  width: 300px;
+} 
+
 @media (max-width: 1198px) {
-  #right-column {
-    margin: auto;
-  }
+ 
 }
 
 @media (max-width: 970px) {
-  .blog_posts {
-    width: 590px;
-    height: auto;
-    padding-left: 9px;
-    padding-right: 8px;
-    padding-bottom: 8px;
-    padding-top: 2px;
-    box-shadow: 1px 1px 10px #444;
-    overflow: hidden;
-    background-color: #fff;
-  }
+  
 }
 
 #inner {
-  width: 600px;
+  width: 700px;
   height: auto;
   border: black;
   background-color: #222;
@@ -181,15 +201,4 @@ hr.post {
   padding-top: 20px;
   padding-right: 5px;
 
-}
-
-#left-column {
-  background-color: #222;
-  float: left;
-  width: 90px;
-  margin-left: -15px;
-}
-
-#left-column a {
-  color: white;
 }
