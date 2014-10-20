@@ -1,3 +1,4 @@
+@import "bootstrap-sprockets";
 @import 'bootstrap';
 
 .banner {
@@ -156,6 +157,7 @@ hr.post {
  
 .right-list {
   padding: 0px;
+  height: 40px;
 } 
 
 .right-list li {
@@ -172,6 +174,16 @@ hr.post {
   float: right;
   width: 300px;
 } 
+
+span.glyphicon-envelope {
+    font-size: 1.8em;
+    color: #5DA8DD;
+    vertical-align: middle;
+}
+
+.twitter-link {
+
+}
 
 @media (max-width: 1198px) {
  
