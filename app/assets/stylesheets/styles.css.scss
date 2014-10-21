@@ -18,7 +18,7 @@
 }
 
 .banner-container {
-  width: 1170px;
+  width: 1060px;
   margin: auto;
   padding-top: 10px;
 }
@@ -35,7 +35,7 @@
 }
 
 .blogimages {
-  width: 575px;
+  width: 518px;
   min-width: 500px;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .blog_posts {
-  width: 670px;
+  width: 603px;
   height: auto;
   padding-left: 9px;
   padding-right: 8px;
@@ -173,12 +173,17 @@ hr.post {
 .right-nav {
   float: right;
   width: 300px;
+  margin-right: 90px;
 } 
 
 span.glyphicon-envelope {
     font-size: 1.8em;
     color: #5DA8DD;
     vertical-align: middle;
+}
+
+.tags {
+  box-shadow: 1px 1px 1px #444;  
 }
 
 .twitter-link {
@@ -194,7 +199,7 @@ span.glyphicon-envelope {
 }
 
 #inner {
-  width: 700px;
+  width: 630px;
   height: auto;
   border: black;
   background-color: #222;
@@ -209,8 +214,9 @@ span.glyphicon-envelope {
 #right-column {
   float: left;
   height: 1200px;
-  width: 300px;
+  width: 270px;
   padding-top: 20px;
   padding-right: 5px;
+  margin-left: 15px;
 
 }

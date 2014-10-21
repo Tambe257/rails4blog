@@ -9,7 +9,9 @@
           <hr class="post">
           <div class="blogimages"> 
             <p><%= simple_format truncate(post.body, length: 600) %></p><%= link_to 'Read More', post, class: "btn-sm btn-primary" %></p>
-
+            <p>
+              Tags: <%= raw post.tag_list.map {|t| link_to t, tag_path(t)}.join(', ') %>
+            </p>
             <div class="blogcontrols">
               <p> 
                 <i class="fa fa-clock-o"></i> Posted on <%= post.created_at.strftime("%m/%d/%Y") %>
@@ -59,6 +61,14 @@
               </li>
             </ul>
           </div> 
+        </div>
+      </div>
+      <!-- tag cloud -->
+      <div class="well tags" id="tag_cloud">
+        <h4>Tags</h4>
+        <% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
+          <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+        <% end %>
         </div>
       </div>
     </div>

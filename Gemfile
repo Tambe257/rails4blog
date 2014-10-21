@@ -28,6 +28,7 @@ gem 'simple_form', '~> 3.0.2'
 gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.53.0'
 gem 'bootstrap-sass'
+gem 'acts-as-taggable-on', '~> 3.4'
 
 group :production do
   gem 'pg', '~> 0.17.1'
