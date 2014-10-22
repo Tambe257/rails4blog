@@ -1,14 +1,19 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  require 'will_paginate/array'
 
   # GET /posts
   # GET /posts.json
   def index
     if params[:tag]
       @posts = Post.tagged_with(params[:tag])
+    elsif
+      @posts = Post.search(params[:search]).order("created_at DESC")
     else
-      @posts = Post.all
+      @posts = Post.all.order("created_at DESC")
     end
+
+    @posts = @posts.paginate(:page => params[:page], :per_page => 5)
 
     @recent_posts = Post.all.order("created_at DESC").limit(5)
   end

@@ -29,6 +29,8 @@ gem 'paperclip', '~> 3.0'
 gem 'aws-sdk', '~> 1.53.0'
 gem 'bootstrap-sass'
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'will_paginate', '3.0.5'
+gem 'will_paginate-bootstrap'
 
 group :production do
   gem 'pg', '~> 0.17.1'
