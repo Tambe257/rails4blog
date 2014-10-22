@@ -31,7 +31,7 @@ gem 'bootstrap-sass'
 gem 'acts-as-taggable-on', '~> 3.4'
 gem 'will_paginate', '3.0.5'
 gem 'will_paginate-bootstrap'
-gem 'ckeditor', '~> 4.1.0'
+gem 'ckeditor', '~> 4.0.11'
 
 group :production do
   gem 'pg', '~> 0.17.1'
