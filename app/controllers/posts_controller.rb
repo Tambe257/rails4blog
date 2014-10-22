@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     if params[:tag]
       @posts = Post.tagged_with(params[:tag])
     else
-    @posts = Post.all
+      @posts = Post.all
     end
 
     @recent_posts = Post.all.order("created_at DESC").limit(5)

@@ -1,6 +1,19 @@
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:visited {
+  color: blue;
+}
+
 .banner {
   color: white;
   font-size: 35px;
@@ -34,6 +47,10 @@
   border-radius: 5px;
 }
 
+.blog-edit {
+  margin-top: 20px;
+}
+
 .blogimages {
   width: 518px;
   min-width: 500px;
@@ -49,12 +66,26 @@
 }
 
 .blogimages a {
-  padding-right: 15px;
-  
+  color: black;
 }
+
 .blogcontrols {
   float:right;
   margin: 20px 20px 0 0;
+}
+
+.blog-new {
+  margin-top: 20px;
+}
+
+.blog-show {
+  margin-top: 20px;
+}
+
+.blog-show-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .blogshowimages img {
@@ -182,8 +213,8 @@ span.glyphicon-envelope {
     vertical-align: middle;
 }
 
-.tags {
-  box-shadow: 1px 1px 1px #444;  
+.tags a {
+   color: black;
 }
 
 .twitter-link {
