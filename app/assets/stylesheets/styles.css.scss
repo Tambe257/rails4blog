@@ -79,6 +79,11 @@ a:visited {
 
 .blog-show {
   margin-top: 20px;
+  min-height: 800px;
+}
+
+.blog-show a {
+  color: blue;
 }
 
 .blog-show-title {
@@ -133,6 +138,11 @@ body {
   padding-top: 0px;
   overflow: hidden;
   margin: auto;
+}
+
+.devise-pages {
+  margin-top: 20px;
+  min-height: 800px;
 }
 
 .header {
