@@ -178,6 +178,38 @@ hr.post {
   background-color: transparent;
 }
 
+.helpful-links {
+
+}
+
+.helpful-links a {
+  color: blue;
+}
+
+.helpful-links ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.helpful-links-page {
+  min-height: 800px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.helpful-links-page a {
+  color: blue;
+}
+
+.helpful-links-page ul {
+  list-style-type: disc;
+  padding-left: 10px;
+}
+
+.helpful-links-page-well {
+  margin-top: 20px;
+}
+
 .home-container {
   width: 1000px;
   margin: 0 auto;

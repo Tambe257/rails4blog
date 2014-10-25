@@ -2,6 +2,7 @@ Rails4blog::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   devise_for :users
   get 'pages/home'
+  get 'pages/links'
 
   resources :posts
 

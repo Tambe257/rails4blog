@@ -34,7 +34,7 @@
               <span class="glyphicon glyphicon-envelope"></span>
             <% end %>
         </li>
-        <li><%= link_to image_tag('Octocat.jpg'), "http://www.github.com/tambe257" %></li>
+        <li><%= link_to image_tag('Octocat.jpg'), "http://www.github.com/tambe257", :target => "_blank" %></li>
       </ul>
     </div>  
     <div class="blog_wells">
@@ -64,10 +64,22 @@
       </div>
       <!-- tag cloud -->
       <div class="well tags" id="tag_cloud">
-        <h4>Tags</h4>
+        <h4>Sort By Tags:</h4>
         <% tag_cloud Post.tag_counts, %w[s m l] do |tag, css_class| %>
           <%= link_to tag.name, tag_path(tag.name), class: css_class %>
         <% end %>
+        </div>
+      </div>
+      <!-- Helpful links -->
+      <div class="well helpful-links" >
+        <h4>Helpful Links</h4>
+        <ul class="list-unstyled">
+          <li><%= link_to "Railscasts", "http://www.railcasts.com", :target => "_blank" %></li>
+          <li><%= link_to "W3Schools", "http://www.w3schools.com", :target => "_blank" %></li>
+          <li><%= link_to "Stack Overflow", "http://www.stackoverflow.com", :target => "_blank" %></li>
+          <li><%= link_to "Bootstrap", "http://twitter.github.io/bootstrap/", :target => "_blank" %></li>
+          <li><%= link_to "More...", pages_links_path %></li>
+        </ul>
         </div>
       </div>
     </div>
