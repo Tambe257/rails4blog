@@ -8,7 +8,7 @@
 
           <hr class="post">
           <div class="blogimages"> 
-            <p><%= raw truncate(post.body, length: 800, :escape => false) %></p><%= link_to 'Read More', post, class: "btn-sm btn-primary" %></p>
+            <p><%= raw post.body %></p><%= link_to 'Read More', post, class: "btn-sm btn-primary" %></p>
             <p>
               Tags: <%= raw post.tag_list.map {|t| link_to t, tag_path(t)}.join(', ') %>
             </p>
