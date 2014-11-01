@@ -20,7 +20,7 @@ a:visited {
   font-family: "Lucida Grande", Arial, Helvetica, Verdana, sans-serif;
   margin-left: 20px;
   margin-right: 20px;
-  float: left;
+  text-align: center;
 }
 
 .banner a:hover {
@@ -244,6 +244,10 @@ hr.post {
   color: white;
 }
 
+.right-list a:visited {
+  color: white;
+}
+
 .right-list li {
   display: inline;
   color: white;
@@ -259,12 +263,6 @@ hr.post {
   width: 300px;
   margin-right: 90px;
 } 
-
-.slogan {
-  color: white;
-  font-size: 25px;
-  margin-top: 10px;
-}
 
 span.glyphicon-envelope {
     font-size: 1.8em;
