@@ -14,6 +14,13 @@ a:visited {
   color: blue;
 }
 
+.avatar {
+  height: 125px;
+  margin-left: 23%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .banner {
   color: white;
   font-size: 35px;
@@ -236,22 +243,23 @@ hr.post {
 } 
 
 .right-list {
+  margin-left: 30px;
   padding: 0px;
   height: 40px;
 } 
 
 .right-list a {
-  color: white;
+  color: black;
 }
 
 .right-list a:visited {
-  color: white;
+  color: black;
 }
 
 .right-list li {
   display: inline;
-  color: white;
-  margin: 0 10px 0 10px;
+  color: black;
+  margin: 0 10px 0 25px;
 }
 
 .right-list a:hover {
@@ -264,18 +272,42 @@ hr.post {
   margin-right: 90px;
 } 
 
+.right-row-1 {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
 span.glyphicon-envelope {
     font-size: 1.8em;
-    color: white;
+    color: black;
     vertical-align: middle;
 }
 
 .tags a {
-   color: black;
+  padding: 6px 7px;
+  margin-right: 0;
+  margin-bottom: 4px;
+  line-height: 100%;
+  display: inline-block;
+  color: black !important;
+  background-color: #DADADA;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  font-size: 12px !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.5s;
 }
 
+.tags a:hover {
+  background-color: red;
+  color: #FFF !important;
+}
 .twitter-link {
 
+}
+
+.well {
+  background-color: #fff;
 }
 
 @media (max-width: 1198px) {

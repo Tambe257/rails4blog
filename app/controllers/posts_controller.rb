@@ -17,6 +17,8 @@ class PostsController < ApplicationController
     @posts = @posts.paginate(:page => params[:page], :per_page => 5)
 
     @recent_posts = Post.all.order("created_at DESC").limit(5)
+
+    @users = User.all
   end
 
   # GET /posts/1
