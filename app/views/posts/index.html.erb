@@ -23,7 +23,8 @@
           <br /> 
         </div><!-- blog_posts-->    
       <% end %>
-      <p style="text-align:left;"><a href="#">Back To The Top</a></p>
+      <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+      <p style="text-align:left;"><a class="backToTheTop" href="#">Back To The Top</a></p>
     </div> <!-- col-lg-8--> 
   </div>    
   <div id="right-column"> 
