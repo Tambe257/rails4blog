@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Signika+Negative);
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(http://fonts.googleapis.com/css?family=Tenor+Sans);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,900);
+
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 
@@ -31,9 +38,15 @@ a.backToTheTop {
 
 .banner {
   color: white;
-  padding-top: 7px;
+  padding-top: 10px;
   position: relative;
   width: 1000px;
+}
+
+.banner a {
+  color: white;
+  font-size: 35px;
+  font-family: 'Merriweather', serif;
 }
 
 .blogboxshow {
